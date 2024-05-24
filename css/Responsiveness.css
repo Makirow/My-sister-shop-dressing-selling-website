@@ -1,0 +1,87 @@
+@media (max-width: 768px){
+    .header-Icons{
+        display: flex;
+        margin-left: auto;
+    }
+
+    .navigation-bar a{
+          display: none;
+    }
+
+    #feature, .product-Container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #Second-Banner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 40px;
+    }
+
+    #Second-Banner .Banner-box{
+         min-width: 100%;
+    }
+
+    #Third-Banner{
+        padding: 70px 40px ;
+    }
+
+    #Third-Banner .Banner-box{
+        min-width: 100%;
+    }
+
+    #Newsletter{
+        flex-direction: column;
+    }
+
+    #Newsletter .NewsText{
+        width: 100%;
+    }
+
+    #Newsletter .newsletter-Singup-form{
+         width: 100%;
+     }
+    
+     #footer .footer-subsection{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+     #footer .footer-subsection .footer-column{
+         width: 100%;
+        
+    }
+
+    .column-divider-section .column-divider{
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+ }
+
+ .column-divider-section{
+    width: 100%;
+    margin-top: 20px;
+}
+
+}
+
+@media (max-width: 620px){
+    .header-Icons{
+        display: flex;
+        margin-left: auto;
+    }
+
+    .navigation-bar a{
+          display: none;
+    }
+
+    #feature{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}

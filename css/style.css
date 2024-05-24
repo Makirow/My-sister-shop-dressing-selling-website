@@ -1,0 +1,893 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    color: #090f1f;
+    user-select: none;
+    text-decoration: none;
+}
+:root{
+    --heading-color: #222 ;
+    --Paragraphtext-color:#465b52;
+    --Background-color:#e7ccd5;
+    --linkText-color: rgb(199, 40, 67);
+    --Box-Shadow: rgba(0, 0, 0, 0.06);
+    --ActiveText-Color: rgb(199, 40, 67);
+    --border-color: #e7ccd5;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: var(--heading-color);
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: var(--heading-color);
+}
+
+h4{
+    font-size: 20px;
+    color: var(--heading-color);
+}
+
+h6{
+    font-size: 12px;
+    font-weight: 700;
+   
+}
+
+p{
+    font-size: 16px;
+   color: var(--Paragraphtext-color);
+   margin: 15px 0 20px 0;
+}
+
+.section-padding1{
+   padding: 40px 80px;
+}
+
+.section-margin1{
+    margin: 40px 0;
+ }
+
+ body{
+    width: 100%;
+    overflow-x: hidden ;
+ }
+ 
+/*=============================HEADER SECTION BEGINS HERE ========================*/
+
+#header{
+    position:sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0rem 5%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    background: var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    cursor: default;
+    z-index: 100000;
+}
+
+.logo{
+    font-size: 20px;
+    color: var(--linkText-color) ;
+    cursor: default;
+    font-weight: 800;
+    text-transform: uppercase;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.logoImg{
+   width: 70px;
+   height: 70px;
+   position: relative;
+   background-color: white;
+   border-radius: 50%;
+}
+
+.logoImg img{
+   width: 100%;
+   height: 110%;
+   object-fit:cover;
+   object-position: center;
+   top: 50%;
+   left: 50%;
+   margin-top: -5px;
+   transform: translate(-50%, -50%);
+   position: absolute;
+}
+
+.navigation-bar{
+    display: block;
+}
+
+.navigation-bar a{
+    font-size: 18px;    
+    font-weight: 600;
+    color: #090f1f;
+    margin-left: 0px;
+    padding: 10px;
+    transition: 0.3s linear;
+    position: relative;
+    width: 100%;
+}
+
+.navigation-bar a.active span{
+        position: absolute;
+        bottom: 0;
+        margin-top: 10px;
+        left: 10px;
+        width: 65%;
+        border-radius: 2px;
+        height: 3px;
+        background: var(--ActiveText-Color);
+        z-index: 100;
+}
+
+.navigation-bar a:hover, .header .menu:hover, .header .navigation-bar a.active .menu{
+    color: var(--ActiveText-Color);  
+}
+.navigation-bar a.active{
+    color: var(--ActiveText-Color);
+    font-weight: bold;
+}
+
+.header-Icons{
+    display: none;
+    gap: 10px;
+    align-items: center;
+}
+
+.menu{
+    font-size: 20px;
+    color: #090f1f;
+    transition: 0.3s linear;
+    cursor: pointer;
+   font-weight: 600;
+   line-height: 4px;
+}
+/*=============================HEADER SECTION ENDS HERE ========================*/
+
+
+/*==========================FRONT PAGE SECTION STARTS HERE============================*/
+
+#Front-page{
+    background:var(--Background-color);
+    width: 100%;
+    padding: 0 3%;
+    height: 100vh;  
+    overflow: hidden; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.Front-Page-Images{
+      position: relative;
+      width: 100%;
+      height: 100%;
+}
+.Front-Page-Images .Bg-Image{
+    width: 400px;
+    height: 450px;
+   position: absolute;
+   right: 0;
+   bottom: 0;
+}
+
+.Front-Page-Images .Bg-Image img{
+    width: 100%;
+    height: 100%;
+   position: absolute;
+   transform: scale(1.4);
+  bottom: 0;
+}
+
+
+
+.front-page-SubSection{
+      width: 100%;
+      height: 100%;
+      padding: 0 50px;
+      display: flex;
+      z-index: 100;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+     
+}
+
+.front-page-SubSection h4{
+    padding-bottom: 15px;
+}
+
+.front-page-SubSection h1{
+    color: var(--linkText-color);
+    text-wrap: nowrap;
+}
+
+.front-page-SubSection button{
+     background: var(--linkText-color);
+     border: none;
+     padding: 10px;
+     font-weight: 600;
+     cursor: pointer;
+     font-size: 15px;
+}
+
+/*===========================FRONT PAGE SECTION ENDS HERE============================*/
+
+/*===========================FEATURE SECTION BEGINS HERE============================*/
+
+#feature{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#feature .feater-box{
+     width: 180px;
+     text-align: center;
+     padding: 25px 15px;
+     border-radius: 5px;
+     margin: 15px 0;
+     transition: all .5s linear;
+     border: 1px solid #ccefd0;
+     background-color: #ffffff98;
+     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+}
+
+#feature .feater-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.02);
+}
+
+#feature .feater-box img{
+    width: 100px;
+    height: 100px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#feature .feater-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;   
+    line-height: 1;
+    font-size: 15px;
+    text-transform: capitalize;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 600;
+    color: green;
+    background: rgba(172, 255, 47, 0.364);
+   
+}
+
+#feature .feater-box:nth-child(2) h6{
+    color: var(--linkText-color);
+    background:rgba(255, 192, 203, 0.364);
+}
+
+#feature .feater-box:nth-child(3) h6{
+    color: blue;
+    background:rgba(0, 60, 255, 0.364);
+}
+
+
+/*===========================FEATURE SECTION ENDS HERE============================*/
+
+
+/*===========================PRODUCT1 SECTION STARTS HERE============================*/
+
+#product1{
+    text-align: center;
+    padding: 40px 30px;
+}
+
+#product1 h2{
+    color: var(--linkText-color);
+}
+
+#product1 .product-Container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#product1 .product{
+   width: 23%;
+  min-width: 250px; 
+   padding: 10px 12px; 
+   overflow-x: hidden;
+   background: #ffffff98;
+   border: 1px solid var(--Background-color);
+   border-radius: 25px;
+   cursor: pointer;
+   position: relative;
+   box-shadow:  20px 20px 30px rgba(0, 0, 0, 0.03);
+   margin: 15px 0;
+   transition: all .5s linear;
+}
+
+#product1 .product:hover{
+    box-shadow:  20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .product img{
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;   
+ }
+
+ #product1 .product .product-Description{
+    text-align: start;
+    padding: 10px 0;
+ }
+
+ #product1 .product .product-Description span{
+    color: #606063;
+    font-size: 12px;
+ }
+
+ #product1 .product .product-Description h5{
+     padding-top: 7px;
+     color: var(--ActiveText-Color);
+     font-size: 17px;
+ }
+
+ #product1 .product .product-Description i{
+     font-size: 15px;
+     padding-top: 7px;
+     color: rgb(243, 181, 25); 
+ }
+
+ #product1 .product .product-Description .Product-Price{
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 7px;
+ }
+
+ #product1 .product .cart{
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+   line-height: 40px;
+   border-radius: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 550;
+   border: 1px solid var(--border-color);
+   color: var(--ActiveText-Color);
+   background-color: var(--Background-color);
+   position: absolute;
+    bottom: 40px;
+    right: 20px;
+ }
+
+/*===========================PRODUCT1 SECTION ENDS HERE============================*/
+
+
+
+/*=========================== BANNER SECTION STARTS HERE============================*/
+
+#Banner{
+      background-image: url("images\ copy.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   width: 100%;
+   position: relative;
+   height: 35vh;
+   
+    
+}
+
+.Banner-SubSection{
+   width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background:  linear-gradient( rgba(255, 192, 203, 0.356), #ffffff3c, rgba(255, 192, 203, 0.356) ) ; 
+}
+
+.Banner-SubSection h4{
+    color: #fff;
+    padding: 10px 0;
+}
+
+.Banner-SubSection h2{
+    color: #fff;
+    padding: 10px 0;
+    font-size: 40px;
+}
+
+.Banner-SubSection button:hover{
+    background: var(--ActiveText-Color);
+    color: white;
+    cursor: pointer;
+}
+
+.Banner-SubSection button{
+    background: white;
+    color: var(--ActiveText-Color);
+    font-size: 17px;
+    font-weight: 600;
+    width: 15%;
+    transition: 0.4s linear;
+    padding: 13px ;
+    border: none;
+}
+
+/*=========================== BANNER SECTION ENDS HERE============================*/
+
+
+/*===========================PRODUCT1 SECTION STARTS HERE============================*/
+
+#product2{
+    text-align: center;
+    padding: 40px 30px;
+    
+}
+
+#product2 h2{
+    color: var(--linkText-color);
+}
+
+#product2 .product-Container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  
+}
+
+#product2 .product{
+   width: 23%;
+  min-width: 250px;
+  height: 95%;  
+  flex-shrink: 0;
+   padding: 10px 12px; 
+   background: #ffffff98;
+   border: 1px solid var(--Background-color);
+   border-radius: 25px;
+   cursor: pointer;
+   position: relative;
+   box-shadow:  20px 20px 30px rgba(0, 0, 0, 0.03);
+   margin: 15px 0;
+   transition: all .5s linear;
+}
+
+#product2 .product:hover{
+    box-shadow:  20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product2 .product img{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;   
+ }
+
+ #product2 .product:nth-child(2) img{
+    width: 80%;
+   
+       
+ }
+
+ #product2 .product .product-Description{
+    text-align: start;
+    padding: 10px 0;
+ }
+
+ #product1 .product .product-Description span{
+    color: #606063;
+    font-size: 12px;
+ }
+
+ #product2 .product .product-Description h5{
+     padding-top: 7px;
+     color: var(--ActiveText-Color);
+     font-size: 17px;
+ }
+
+ #product2 .product .product-Description i{
+     font-size: 15px;
+     padding-top: 7px;
+     color: rgb(243, 181, 25); 
+ }
+
+ #product2 .product .product-Description .Product-Price{
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 7px;
+ }
+
+ #product2 .product .cart{
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+   line-height: 40px;
+   border-radius: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 550;
+   border: 1px solid var(--border-color);
+   color: var(--ActiveText-Color);
+   background-color: var(--Background-color);
+   position: absolute;
+    bottom: 40px;
+    right: 20px;
+ }
+
+/*===========================PRODUCT1 SECTION ENDS HERE============================*/
+
+
+
+/*===========================SECOND BANNER SECTION STARTS HERE============================*/
+
+#Second-Banner{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  gap: 20px;
+}
+
+#Second-Banner .Banner-box{
+   
+    background:#e7ccd5;
+    background-image: url("CSS PNG/gown9.png") ;
+    background-size:contain;
+    background-position: right 0;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    border-radius: 5px;
+    padding-left: 20px ;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06) ;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 400px;
+    position: relative;
+    height: 45vh;
+}
+
+#Second-Banner .Banner-box:nth-child(2){
+    background:red;
+    background-image: url("CSS PNG/gown1.png");
+    background-size:contain;
+    background-position: right 0;
+    background-repeat: no-repeat;
+    
+}
+
+#Second-Banner .Banner-box h4{
+    color: white;
+    font-weight: 550;
+}
+
+#Second-Banner .Banner-box h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#Second-Banner .Banner-box span{
+    color: white;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+#Second-Banner .Banner-box button{
+    padding: 8px  10px 8px 12px;
+    border: 2px solid white;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    background: transparent;
+    transition: 0.5s linear;
+}
+
+#Second-Banner .Banner-box button:hover{
+    background: var(--ActiveText-Color);
+    border: 2px solid var(--ActiveText-Color);
+    cursor: pointer;
+}
+
+/*================================== SECOND BANNER SECTION ENDS HERE ====================================*/
+
+
+/*================================== THIRD BANNER SECTION ENDS HERE ====================================*/
+
+#Third-Banner{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+#Third-Banner .Banner-box{   
+    background:red;
+    background-image: url("PHXDownloads/ce02bb44-a687-453c-a07e-9176ed81ab82.jpeg") ;
+    background-size:cover;
+    background-position: left 10% bottom 40%;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    border-radius: 5px;
+    padding: 20px ;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06) ;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 30%;
+    position: relative;
+    margin-bottom: 20px;
+    height: 30vh;
+}
+
+#Third-Banner .Banner-box:nth-child(2){
+    background:#e7ccd5;
+    background-image: url("PHXDownloads/ae4d3399-7b10-47a5-884b-17c75ff3122b.jpeg") ;
+    background-size:cover;
+    background-position: right 0 bottom 50%;
+    background-repeat: no-repeat;
+}
+
+#Third-Banner .Banner-box:nth-child(3){
+    background:#ddb100;
+    background-image: url("PHXDownloads/d32782a0-5b4d-4648-ae1a-0555ea1d287c.jpeg");
+    background-size:cover;
+    background-position: right 0 bottom 50%;
+    background-repeat: no-repeat;
+}
+
+
+#Third-Banner h2{
+      color: white;
+      font-weight: 800;
+      font-size: 25px;
+}
+
+#Third-Banner h3{
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+
+/*================================== THIRD BANNER SECTION ENDS HERE ====================================*/
+
+
+/*================================== NEWSLETTER SECTION STARTS HERE ====================================*/
+
+#Newsletter{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: var(--Background-color);
+    flex-wrap: wrap;
+}
+
+#Newsletter .NewsText{
+    width: 60%;
+}
+
+#Newsletter .NewsText h4{
+    color: #465b52;
+    font-weight: 800;
+}
+
+#Newsletter .NewsText p{
+    width: 90%;
+    font-size: 17px;
+}
+
+#Newsletter .NewsText span{
+    color: #465b52;
+    font-weight: 600;
+}
+
+#Newsletter .newsletter-Singup-form{
+   display: flex;
+  justify-content: center;
+   width: 40%;
+}
+
+#Newsletter .newsletter-Singup-form input{
+   padding: 15px 15px 15px 15px;
+   border: none;
+   font-size: 17px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+   border-top-left-radius: 5px ;
+   border-bottom-left-radius: 5px ;
+   font-weight: 530;
+   width: 100%;
+}
+
+#Newsletter .newsletter-Singup-form button{
+   padding: 10px 12px 10px 12px;
+    background: var(--ActiveText-Color);
+    border: none;
+    font-size: 15px;
+    border-top-right-radius: 5px ;
+    border-bottom-right-radius: 5px ;
+   font-weight: 550;
+   text-wrap: nowrap;
+   cursor: pointer;
+}
+
+
+/*================================== NEWSLETTER SECTION ENDS HERE ====================================*/
+
+
+/*================================== FOOTER SECTION ENDS HERE ====================================*/
+
+#footer{
+   margin-top: -40px;
+}
+
+#footer .footer-subsection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+#footer .footer-subsection .footer-column{
+    display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 40%;
+    
+}
+
+#footer .footer-subsection .footer-column p{
+   font-weight: 500;
+   margin-bottom: -5px;
+    
+}
+
+#footer .footer-subsection .footer-column p:nth-child(4){
+    margin-bottom: 20px;
+     
+ }
+
+
+.footer-column-content{
+    margin-top: 20px;
+}
+
+#footer h4{
+    color: var(--ActiveText-Color);
+    font-size: 25px;
+}
+
+.column-divider-section{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.column-divider-section .column-divider{
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+}
+
+.column-divider-section .column-divider .divided-footer-column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-column-payment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.divided-footer-column a{
+   font-size: 17px;
+   line-height: 2;
+   font-weight: 550;
+     transition: 0.3s linear;
+   text-transform: capitalize;
+}
+.divided-footer-column a:hover{
+    color: var(--ActiveText-Color);
+}
+
+#footer .logo{
+    justify-content: flex-start ;
+}
+
+.link-Image{
+    width: 80px;
+    height: 40px;
+    position: relative;
+}
+.link-Image:nth-child(2){
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+.link-Image img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+}
+
+.payment-options{
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.follow-icons{
+    margin-top: 7px;
+    display: flex;
+    gap: 10px;
+}
+
+.follow-icons i{  
+   width: 30px;
+   height: 30px;
+   font-size: 20px;
+   font-weight: 600;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: var(--ActiveText-Color);
+   background: transparent;
+   transition: background 0.5s linear;
+   border-radius: 50%;
+   border: 2px solid var(--ActiveText-Color);
+}
+
+.follow-icons i:hover{
+    background: var(--ActiveText-Color);
+    color: white;
+    cursor: pointer;
+}
+
+.copyright{
+    text-align: center;
+    font-weight: 550;
+}
+
+/*================================== FOOTER SECTION ENDS HERE ====================================*/
